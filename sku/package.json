@@ -1,0 +1,22 @@
+{
+  "name": "sku",
+  "version": "1.0.0",
+  "description": "sku selector",
+  "main": "lib/sku.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "chai": "^1.10.0",
+    "colors": "^1.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "sku"
+  ],
+  "author": "bukuta",
+  "license": "MIT"
+}
