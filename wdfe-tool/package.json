@@ -1,0 +1,20 @@
+{
+  "name": "wdfe-tool",
+  "version": "1.0.0",
+  "description": "wdfe-build",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "wdfe-build": "build.js"
+  },
+  "dependcies": {
+    "htmlparser": "*"
+  },
+  "author": "bukuta",
+  "license": "ISC",
+  "dependencies": {
+    "read-installed": "^3.1.5"
+  }
+}
