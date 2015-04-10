@@ -81,11 +81,13 @@ function getImagepath(files,cb){
   //console.log('getImagepath',csspath,imagepath,_file); 
   return fs.statAsync(_file).then(function(data){
     //console.log('exists',data);
-    return upload({file:_file,content_type:'image/jpeg',url:'http://api.ffan.com/ffan/v1/uploadpicture'}).then(function(fid){
+    //return upload({file:_file,content_type:'image/jpeg',url:'http://api.ffan.com/ffan/v1/uploadpicture'}).then(function(fid){
+    return upload({file:_file,content_type:'image/jpeg',url:'http://tfs.intra.ffan.com/tfs/v1/files'}).then(function(fid){
       //console.log('uploaded:',_file,fid);
       return fid;
     });
   }).catch(function(err){
+    //console.log(err);
       return true;
     });
 }
@@ -126,5 +128,6 @@ function transerImageUrl(declaration,csspath){
   }
 }
 function buildUrl(fid,originurl){
+  return "http://api.ffan.com/tfs/v1/files/"+fid+'#'+originurl;
   return "http://img"+(Math.round(Math.random()*10)%5+1)+".ffan.com/orig/"+fid+'#'+originurl;
 }
