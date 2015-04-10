@@ -1,0 +1,16 @@
+{
+  "name": "wdfe-shop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bukuta-components":{
+    "html":"src/shop.tpl",
+    "javascript":"src/shop.js",
+    "css":"src/shop.less"
+  },
+  "author": "",
+  "license": "ISC"
+}
