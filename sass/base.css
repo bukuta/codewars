@@ -1,0 +1,11 @@
+#moda {
+  background: red;
+  color: blue; }
+
+#main {
+  color: blue;
+  font-size: 0.4em;
+  background: red; }
+  #main .a {
+    color: red;
+    opacity: 0.5; }
